@@ -1,0 +1,162 @@
+/*
+ * 业务无关样式 nothing.css 0.1
+ * 作者：https:github.com/taozhiw
+ * 源码地址：https://github.com/taozhiw/nothing.css
+ * 参考样式：https://github.com/zhangxinxu/zxx.lib.css
+ */
+
+$lte7: true;         //是否开启IE7及以下hack支持
+$lte8: true;         //是否开启IE8及以下hack支持
+
+/* 显示 */
+%dn{
+  display:none;
+}
+.dn {
+  @extend %dn;
+}
+%db{
+  display: block;
+}
+.db{
+  @extend %db;
+}
+%dib{
+  display: inline-block;
+  @if $lte7 {
+    *display: inline;
+    *zoom:1;
+  }
+}
+.dib{
+  @extend %dib;
+}
+%di{
+  display: inline;
+}
+.di{
+  @extend %di;
+}
+
+/* 文本对齐 */
+%tc{
+  text-align:center;
+}
+.tc{
+  @extend %tc;
+}
+%tr{
+  text-align: right;
+}
+.tr{
+  @extend %tr;
+}
+%tl{
+  text-align: left;
+}
+.tl{
+  @extend %tl;
+}
+%tj{
+  text-align: justify;
+}
+.tj{
+  @extend %tj;
+}
+
+/* 定位 */
+%pa{
+  position: absolute;
+}
+.pa{
+  @extend %pa;
+}
+%pr{
+  position: relative;
+}
+.pr{
+  @extend %pr;
+}
+%pf{
+  position: fixed;
+}
+.pf{
+  @extend %pf;
+}
+
+/* 浮动 */
+%l{
+  float: left;
+}
+.l{
+  @extend %l;
+}
+%r{
+  float: right;
+}
+.r{
+  @extend %r;
+}
+
+/* 清除浮动 */
+%cl{
+  @if $lte7{
+    *zoom: 1;
+  }
+  &:after {
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+.cl{
+  @extend %cl;
+}
+
+/* 单行溢出省略 */
+%ell{
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow:hidden;
+}
+.ell{
+  @extend %ell;
+}
+
+/* 透明 */
+%opa0{
+  opacity:0;
+  @if $lte8{
+    filer:alpha(opacity=0);
+  }
+}
+.opa0{
+  @extend %opa0;
+}
+
+/* 鼠标形状 */
+%poi{
+  cursor:pointer;
+}
+.poi{
+  @extend %poi;
+}
+%def{
+  cursor:default;
+}
+.def{
+  @extend %def;
+}
+
+/* 块状元素水平居中 */
+%auto{
+  margin-left:auto; margin-right:auto;
+}
+.auto{
+  @extend %auto;
+}
+
+
+
+
+

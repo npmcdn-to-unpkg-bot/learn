@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="lanseye">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>mutil.js</title>
+    <link rel="stylesheet" href="stylesheets/screen.css"/>
+    <style>
+        .test-feedback{
+            height: 40px;
+            background-color: gray;
+        }
+        .test-feedback.hover{
+            background-color: black;
+        }
+        .test-feedback-2{
+            width: 50%;
+            height: 40px;
+        }
+        .test-feedback-2.hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-feedback">
+        <div class="test-feedback-2">
+
+        </div>
+    </div>
+    <script src="mutil.js"></script>
+    <script>
+        Mutil.setTouchFeedback();
+    </script>
+</body>
+</html>

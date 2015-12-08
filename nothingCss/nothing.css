@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/*
+ * 业务无关样式 nothing.css 0.1
+ * 作者：https:github.com/taozhiw
+ * 源码地址：https://github.com/taozhiw/nothing.css
+ * 参考样式：https://github.com/zhangxinxu/zxx.lib.css
+ */
+/* 显示 */
+.dn {
+  display: none;
+}
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.di {
+  display: inline;
+}
+
+/* 文本对齐 */
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tj {
+  text-align: justify;
+}
+
+/* 定位 */
+.pa {
+  position: absolute;
+}
+
+.pr {
+  position: relative;
+}
+
+.pf {
+  position: fixed;
+}
+
+/* 浮动 */
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+/* 清除浮动 */
+.cl {
+  *zoom: 1;
+}
+.cl:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 单行溢出省略 */
+.ell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* 透明 */
+.opa0 {
+  opacity: 0;
+  filer: alpha(opacity=0);
+}
+
+/* 鼠标形状 */
+.poi {
+  cursor: pointer;
+}
+
+.def {
+  cursor: default;
+}
+
+/* 块状元素水平居中 */
+.auto {
+  margin-left: auto;
+  margin-right: auto;
+}
