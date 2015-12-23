@@ -1,0 +1,10 @@
+{
+  "name": "react-demo",
+  "version": "1.0.0",
+  "author": "taozhi",
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^0.14.3",
+    "webpack": "^1.12.9"
+  }
+}
