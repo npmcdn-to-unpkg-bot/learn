@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>imageZoom</title>
+</head>
+<body>
+    <ul>
+        <li><img src="images/a_s.png" alt="a" big-src="images/a_b.png"></li>
+        <li><img src="images/b_s.png" alt="b" big-src="images/b_b.png"></li>
+    </ul>
+
+    <script src="imageZoom.js"></script>
+    <script>
+        imageZoom(document.querySelectorAll('img'),{
+            bigAttribute: 'big-src'
+        });
+    </script>
+</body>
+</html>
