@@ -1,0 +1,45 @@
+// 水平伸缩容器
+.row-flex{
+  flex-flow: row wrap;
+
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -webkit-box-direction: normal;
+  -moz-box-lines: multiple;
+  -webkit-box-lines: multiple;
+}
+
+// 垂直伸缩容器
+.col-flex{
+  flex-flow: column wrap;
+
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-direction: normal;
+  -moz-box-lines: multiple;
+  -webkit-box-lines: multiple;
+}
+
+// 伸缩容器
+.flex-warp{
+  display: flex;
+}
+
+// 水平和垂直居中
+.midCenter{
+  justify-content: center;
+  align-items: center;
+
+  -moz-box-pack: center;
+  -webkit-box-pack: center;
+  box-pack:center;
+  -moz-box-align: center;
+  -webkit-box-align: center;
+  box-align: center;
+  box-pack:center;
+  -ms-flex-pack:center;
+  display: -ms-flexbox;
+  -ms-flex-align:center;
+}
+

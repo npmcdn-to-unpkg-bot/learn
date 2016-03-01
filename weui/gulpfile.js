@@ -17,6 +17,7 @@ gulp.task('sass',function() {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
+        .pipe(gulp.dest('./style'))
         .pipe(rename({
             suffix: ".min",
             extname: ".css"
