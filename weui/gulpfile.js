@@ -13,7 +13,11 @@ gulp.task('sass',function() {
         autoprefixer()
     ];
 
-    gulp.src('./sass/*.scss')
+    gulp.src([
+        './sass/*.scss',
+        './sass/**/*.scss',
+        './sass/**/**/*.scss'
+        ])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
@@ -28,7 +32,11 @@ gulp.task('sass',function() {
 });
 
 gulp.task('sass:watch',function() {
-    gulp.watch('./sass/*.scss', ['sass']);
+    gulp.watch([
+        './sass/*.scss',
+        './sass/**/*.scss',
+        './sass/**/**/*.scss'
+    ], ['sass']);
 });
 
 gulp.task('default',['sass','sass:watch']);

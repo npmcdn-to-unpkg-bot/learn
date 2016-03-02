@@ -1,0 +1,13 @@
+@import "../base/fn";
+
+.hub-register{
+  .logo{
+    margin: 0 auto;
+    margin-top: dpToRem(66);
+  }
+  .sec-panel{
+    .btn-primary{
+      margin-top: $middleSpace;
+    }
+  }
+}

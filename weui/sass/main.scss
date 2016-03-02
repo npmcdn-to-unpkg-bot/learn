@@ -1,8 +1,17 @@
-@import "flex";
+@import "base/fn";
+
+input::-webkit-input-placeholder{
+  color: $placeholderColor;
+}
 
 body,html {
   height: 100%;
-  -webkit-tap-highlight-color: transparent
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Microsoft YaHei UI Light","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input,textarea{
+  font-family: "Microsoft YaHei UI Light","Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -18,10 +27,43 @@ body,html {
 }
 
 .page {
+  padding-bottom: pxToRem(200);
+  top: dpToRem(48);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  background-color: $mainBackgroundColor;
 }
 
-.test{
-  display: flex;
+.page--sec{
+  @extend .page;
+  background-color: $secondaryBackgroundColor;
 }
+
+.header{
+  width: 100%;
+  height: dpToRem(48);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $mainColor;
+  line-height: dpToRem(48);
+  text-align: center;
+  font-size: pxToRem(56);
+  color: $secondaryFontColor;
+  .header-return{
+    position: absolute;
+    left: dpToRem(16);
+    top: 50%;
+    margin-top: -12px;
+    .icon-return{
+      display: block;
+    }
+  }
+  .header-content{
+    margin: 0 auto;
+  }
+}
+
+
+@import "modules/modules";
+

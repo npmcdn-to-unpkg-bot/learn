@@ -1,0 +1,9 @@
+$baseWidth: 1080;
+
+@function dpToRem($dp){
+  @return $dp * 3 / ($baseWidth / 10) * 1rem;
+}
+
+@function pxToRem($px){
+  @return $px / ($baseWidth / 10) * 1rem;
+}

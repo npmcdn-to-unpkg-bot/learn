@@ -1,0 +1,102 @@
+@import "../../base/fn";
+
+// logo
+.logo{
+  width: pxToRem(460);
+  >img{
+    width: 100%;
+  }
+}
+// panel
+.sec-panel{
+  width: $secondaryPanelWidth;
+  margin: 0 auto;
+  margin-top: $middleSpace;
+}
+
+// form
+.form-input{
+  width: 100%;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  //line-height: dpToRem(16);
+}
+.form-radio{
+  height: pxToRem(60);
+  margin-left: pxToRem(70);
+  position: relative;
+  line-height: pxToRem(60);
+  input[type="radio"]{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .icon{
+    vertical-align: text-bottom;
+  }
+  .radio-text{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: dpToRem(16);
+    color: $placeholderColor;
+  }
+  input[type="radio"]:checked + .icon{
+    background-position: -21px -85px;;
+  }
+}
+.form-box{
+  box-sizing: border-box;
+  width: 100%;
+  padding: dpToRem(24) dpToRem(4) dpToRem(8);
+  position: relative;
+  font-size: dpToRem(16);
+  &:after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    font-size: 0;
+    border-bottom: 2px solid $borderColor;
+    color: $borderColor;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+.form-box--radio{
+  padding-top: dpToRem(18);
+  @extend .form-box;
+  .radio-label{
+    color: $placeholderColor;
+  }
+  .form-radio{
+    float: right;
+  }
+}
+
+// button
+%btn{
+  width: 100%;
+  display: block;
+  background-color: $mainColor;
+  color: $secondaryFontColor;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.btn-primary{
+  @extend %btn;
+  height: dpToRem(44);
+  line-height: dpToRem(44);
+  font-size: pxToRem(48);
+}
