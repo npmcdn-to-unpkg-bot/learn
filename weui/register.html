@@ -19,16 +19,16 @@
     </header>
     <div class="page--sec">
         <h1 class="logo"><img src="images/hub2.png" alt="HUB"></h1>
-        <form action="">
+        <form action="" id="hub_register_form">
             <div class="sec-panel">
                 <div class="form-box">
-                    <input class="form-input" type="text" placeholder="姓名（必填）">
+                    <input class="form-input" type="text" placeholder="姓名（必填）" required name="姓名">
                 </div>
                 <div class="form-box">
-                    <input class="form-input" type="number" placeholder="手机号码（必填）">
+                    <input class="form-input" type="number" placeholder="手机号码（必填）" required name="手机号码">
                 </div>
                 <div class="form-box">
-                    <input class="form-input" type="email" placeholder="邮箱（必填）">
+                    <input class="form-input" type="email" placeholder="邮箱（必填）" required name="邮箱">
                 </div>
                 <div class="form-box--radio">
                     <span class="radio-label">性别</span>
@@ -46,11 +46,20 @@
                 <div class="form-box">
                     名片
                 </div>
-                <a href="javascript:;" class="btn-primary">注册</a>
+                <a href="javascript:;" class="btn-primary" id="hub_register">注册</a>
             </div>
         </form>
     </div>
 </div>
+
+<div id="toast" style="display: none;">
+    <div class="weui_mask_transparent"></div>
+    <div class="weui_toast">
+        <i class="weui_icon_toast"></i>
+        <p class="weui_toast_content">必填项不能为空！</p>
+    </div>
+</div>
+
 <script src="script/yocto.min.js"></script>
 <script src="script/main.js"></script>
 </body>
