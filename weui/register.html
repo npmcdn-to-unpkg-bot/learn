@@ -20,7 +20,7 @@
     <div class="page--sec">
         <h1 class="logo"><img src="images/hub2.png" alt="HUB"></h1>
         <form action="" id="hub_register_form">
-            <div class="sec-panel">
+            <div class="panel--sec">
                 <div class="form-box">
                     <input class="form-input" type="text" placeholder="姓名（必填）" required name="姓名">
                 </div>
@@ -31,7 +31,7 @@
                     <input class="form-input" type="email" placeholder="邮箱（必填）" required name="邮箱">
                 </div>
                 <div class="form-box--radio">
-                    <span class="radio-label">性别</span>
+                    <span class="form-label">性别</span>
                     <span class="form-radio">
                         <input type="radio" name="sex" value="女">
                         <i class="icon icon-checked"></i>
@@ -43,8 +43,15 @@
                         <span class="radio-text">男</span>
                     </span>
                 </div>
-                <div class="form-box">
-                    名片
+                <div class="form-box--file">
+                    <div>
+                        <span class="form-label">名片</span>
+                        <span class="form-file">
+                            <input type="file" name="添加" id="hub_register_form_file">
+                            添加
+                        </span>
+                    </div>
+                    <div class="form-file-preview" id="hub_register_form_preview"></div>
                 </div>
                 <a href="javascript:;" class="btn-primary" id="hub_register">注册</a>
             </div>
@@ -52,15 +59,10 @@
     </div>
 </div>
 
-<div id="toast" style="display: none;">
-    <div class="weui_mask_transparent"></div>
-    <div class="weui_toast">
-        <i class="weui_icon_toast"></i>
-        <p class="weui_toast_content">必填项不能为空！</p>
-    </div>
-</div>
-
 <script src="script/yocto.min.js"></script>
 <script src="script/main.js"></script>
+<script>
+    HUB.register();
+</script>
 </body>
 </html>

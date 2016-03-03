@@ -1,0 +1,26 @@
+@import "../base/fn";
+
+.hub-discarded{
+  .discarded-box{
+    h2{
+      font-weight: normal;
+      font-size: 16px;
+    }
+  }
+  .discarded-box-two{
+    textarea{
+      min-height: pxToRem(400);
+      width: 100%;
+      border-radius: 3px;
+      border-color: $borderColor;
+    }
+  }
+  .discarded-box-three{
+    margin: 0 auto;
+    width: dpToRem(328);
+    font-size: 14px;
+    .btn-primary{
+      margin-top: dpToRem(36);
+    }
+  }
+}

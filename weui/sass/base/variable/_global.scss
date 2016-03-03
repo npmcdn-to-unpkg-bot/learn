@@ -3,7 +3,9 @@ $mainColor: #4d8bd7;
 $placeholderColor: #b6b6b6;
 
 // font color
+$fontColor: #3c3c3c;
 $secondaryFontColor: #fff;
+$rareFontColor: #b6b6b6;
 
 // background color
 $mainBackgroundColor: #eeeeee;
@@ -13,7 +15,9 @@ $secondaryBackgroundColor: #fff;
 $borderColor: #dddddd;
 
 // panelWidth
+$panelWidth: dpToRem(344);
 $secondaryPanelWidth: dpToRem(226);
 
 // space
+$minSpace: dpToRem(8);
 $middleSpace: dpToRem(48);

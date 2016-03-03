@@ -1,0 +1,36 @@
+.hub-project{
+  .project-box{
+    h2{
+      font-weight: normal;
+      font-size: 16px;
+    }
+  }
+  .project-box-two{
+    >div{
+      >p{
+        margin-top: dpToRem(2);
+      }
+    }
+    .box-two-link{
+      text-decoration: underline;
+    }
+    .icon-location{
+      margin: 0 10px;
+      vertical-align: text-bottom;
+    }
+  }
+  .project-box-three{
+    margin: pxToRem(158) auto 0;
+    width: pxToRem(960);
+    position: relative;
+    .btn-primary{
+      width: 840 / 960 * 100%;
+    }
+    .icon-favorite{
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -12px;
+    }
+  }
+}

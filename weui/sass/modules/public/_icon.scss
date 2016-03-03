@@ -18,3 +18,18 @@
   height: 24px;
   background-position: -25px -148px;
 }
+
+.icon-favorite{
+  width: 24px;
+  height: 24px;
+  background-position: -21px -52px;
+  &.active{
+    background-position:  -21px -19px;
+  }
+}
+
+.icon-location{
+  width: 19px;
+  height: 24px;
+  background-position: -23px -184px;
+}
