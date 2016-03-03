@@ -3,3 +3,9 @@ register.html 注册
 equity.html 股权
 discarded.html 弃单
 project.html 产品名称
+
+
+20160304 问题记录:
+1.register.html 按钮位置不对
+2.register.html 图片变形
+3.discarded.html 文本框上边有下阴影
