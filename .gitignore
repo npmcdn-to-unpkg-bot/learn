@@ -4,3 +4,5 @@ react/node_modules
 .idea/
 weui/.idea
 weui/node_modules
+gulp/.idea
+gulp/node_modules
