@@ -1,8 +1,5 @@
 {
   "dependencies": {
     "gulp": ">=3.9.0"
-  },
-  "devDependencies": {
-    "gulp-listing": "0.0.2"
   }
 }

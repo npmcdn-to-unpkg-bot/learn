@@ -7,6 +7,7 @@ var sourcemaps = require("gulp-sourcemaps");
 var concat = require("gulp-concat");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var listing = require('gulp-listing');
 
 gulp.task('sass',function() {
     var processors = [
@@ -37,6 +38,12 @@ gulp.task('sass:watch',function() {
         './sass/**/*.scss',
         './sass/**/**/*.scss'
     ], ['sass']);
+});
+
+gulp.task('listing',function(){
+    gulp.src('./*.html')
+        .pipe(listing('listing.html'))
+        .pipe(gulp.dest('./'))
 });
 
 gulp.task('default',['sass','sass:watch']);
