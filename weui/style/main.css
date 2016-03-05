@@ -149,10 +149,13 @@ a {
   font-size: 16px; }
 
 .hub-discarded .discarded-box-two textarea {
-  min-height: 3.7037rem;
   width: 100%;
+  min-height: 3.7037rem;
+  padding: 8px;
   border-radius: 3px;
-  border-color: #dddddd; }
+  border-color: #dddddd;
+  font-size: 14px;
+  box-sizing: border-box; }
 
 .hub-discarded .discarded-box-three {
   margin: 0 auto;

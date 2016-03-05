@@ -9,10 +9,13 @@
   }
   .discarded-box-two{
     textarea{
-      min-height: pxToRem(400);
       width: 100%;
+      min-height: pxToRem(400);
+      padding: 8px;
       border-radius: 3px;
       border-color: $borderColor;
+      font-size: 14px;
+      box-sizing: border-box;
     }
   }
   .discarded-box-three{
