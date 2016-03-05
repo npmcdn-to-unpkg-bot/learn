@@ -4,13 +4,13 @@
   "description": "",
   "author": "taozhi1028@gmail.com",
   "dependencies": {
+    "autoprefixer": ">=6.3.3",
     "gulp": ">=3.9.0",
-    "gulp-sass": ">=2.0.4",
-    "gulp-minify-css": ">=1.2.1",
-    "gulp-rename": ">=1.2.2",
-    "gulp-sourcemaps": ">=1.6.0",
     "gulp-concat": ">=2.6.0",
+    "gulp-minify-css": ">=1.2.1",
     "gulp-postcss": ">=6.1.0",
-    "autoprefixer": ">=6.3.3"
+    "gulp-rename": ">=1.2.2",
+    "gulp-sass": ">=2.0.4",
+    "gulp-sourcemaps": ">=1.6.0"
   }
 }
