@@ -3,6 +3,17 @@ var HUB = {};
 !(function(){
     $('body').show();
 
+    // 收藏与取消收藏
+    $('.icon-favorite').on('tap',function(){
+        var $this = $(this);
+
+        if($this.hasClass('active')){
+            $this.removeClass('active');
+        }else{
+            $this.addClass('active');
+        }
+    });
+
     // 注册页面事件
     HUB.register = function(){
 
