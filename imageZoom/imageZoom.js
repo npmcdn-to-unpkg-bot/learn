@@ -2,7 +2,7 @@
  * imageZoom.js
  * date: 2016-2-29
  * author: taozhiw@gmail.com
- * version: 0.1
+ * version: 0.0.1
  */
 ;(function () {
     var MAX_RATIO = 0.95;
