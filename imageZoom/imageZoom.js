@@ -48,8 +48,7 @@
             right: 0,
             bottom: 0,
             left: 0,
-            backgroundColor: '#000',
-            backgroundColor: 'rgba(0,0,0,.7)',
+            backgroundColor: '#222',
             zIndex: 9998,
             filter: 'alpha(opcity=70)'
         });
