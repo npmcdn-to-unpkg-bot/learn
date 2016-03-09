@@ -211,13 +211,24 @@
 
 // list
 .list{
-  justify-content: space-between;
+  width: $panelWidth;
+  //justify-content: space-between;
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .list-item:nth-child(odd){
+    margin-right: dpToRem(4);
+  }
   .list-item{
     margin-bottom: $minSpace;
+    width: dpToRem(168);
+    float: left;
     position: relative;
-    flex-basis: dpToRem(168);
-    flex-shrink: 0;
-    flex-grow: 0;
+    //flex-basis: dpToRem(168);
+    //flex-shrink: 0;
+    //flex-grow: 0;
     background-color: $secondaryBackgroundColor;
     .item-bd{
       padding: dpToRem(12) dpToRem(8);
@@ -231,7 +242,7 @@
       }
     }
     .item-title{
-      min-height: pxToRem(120);
+      min-height: 44px;
       font-size: 16px;
       line-height: 1.4;
       color: $fontColor;
@@ -270,12 +281,18 @@
 
 // media box
 .media-box{
+  width: 100%;
   padding: dpToRem(8);
   background-color: $secondaryBackgroundColor;
+  position: relative;
+  min-height: dpToRem(100);
+  box-sizing: border-box;
   .box-image{
     width: dpToRem(134);
     height: dpToRem(100);
-    margin-right: dpToRem(12);
+    position: absolute;
+    top: dpToRem(8);
+    left: dpToRem(8);
     line-height: dpToRem(100);
     text-align: center;
     img{
@@ -285,8 +302,9 @@
     }
   }
   .box-right{
-    flex: 1;
     position: relative;
+    margin-left: dpToRem(144);
+    min-height: dpToRem(100);
     .icon-favorite{
       position: absolute;
       right: dpToRem(16);

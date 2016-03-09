@@ -360,23 +360,18 @@ a {
     right: 0.11111rem; }
 
 .list {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  width: 9.55556rem; }
+  .list:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .list .list-item:nth-child(odd) {
+    margin-right: 0.11111rem; }
   .list .list-item {
     margin-bottom: 0.22222rem;
+    width: 4.66667rem;
+    float: left;
     position: relative;
-    -webkit-flex-basis: 4.66667rem;
-        -ms-flex-preferred-size: 4.66667rem;
-            flex-basis: 4.66667rem;
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
-    -webkit-box-flex: 0;
-    -webkit-flex-grow: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
     background-color: #fff; }
     .list .list-item .item-bd {
       padding: 0.33333rem 0.22222rem; }
@@ -387,7 +382,7 @@ a {
       .list .list-item .item-image img {
         width: 100%; }
     .list .list-item .item-title {
-      min-height: 1.11111rem;
+      min-height: 44px;
       font-size: 16px;
       line-height: 1.4;
       color: #3c3c3c;
@@ -415,12 +410,18 @@ a {
   color: #b6b6b6; }
 
 .media-box {
+  width: 100%;
   padding: 0.22222rem;
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative;
+  min-height: 2.77778rem;
+  box-sizing: border-box; }
   .media-box .box-image {
     width: 3.72222rem;
     height: 2.77778rem;
-    margin-right: 0.33333rem;
+    position: absolute;
+    top: 0.22222rem;
+    left: 0.22222rem;
     line-height: 2.77778rem;
     text-align: center; }
     .media-box .box-image img {
@@ -428,11 +429,9 @@ a {
       max-height: 100%;
       vertical-align: middle; }
   .media-box .box-right {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    position: relative; }
+    position: relative;
+    margin-left: 4rem;
+    min-height: 2.77778rem; }
     .media-box .box-right .icon-favorite {
       position: absolute;
       right: 0.44444rem;
