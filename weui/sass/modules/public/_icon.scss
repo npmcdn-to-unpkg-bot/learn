@@ -22,9 +22,9 @@
 .icon-favorite{
   width: 24px;
   height: 24px;
-  background-position: -21px -52px;
+  background-position: -67px -52px;
   &.active{
-    background-position:  -21px -19px;
+    background-position:  -67px -15px;
   }
 }
 
@@ -32,4 +32,28 @@
   width: 19px;
   height: 24px;
   background-position: -23px -184px;
+}
+
+.icon-bookmarks{
+  width: 24px;
+  height: 24px;
+  background-position: -68px -90px;
+}
+
+.icon-clock{
+  width: 24px;
+  height: 24px;
+  background-position: -67px -132px;
+}
+
+.icon-star{
+  width: 24px;
+  height: 24px;
+  background-position: -67px -174px;
+}
+
+.icon-person{
+  width: 24px;
+  height: 24px;
+  background-position: -67px -216px;
 }

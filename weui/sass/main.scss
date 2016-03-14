@@ -55,6 +55,11 @@ a{
   top: dpToRem(96);
 }
 
+.page--no-header{
+  @extend .page;
+  top: 0;
+}
+
 .header{
   width: 100%;
   height: dpToRem(48);
@@ -81,6 +86,17 @@ a{
   }
   .header-logo{
     width: pxToRem(148);
+    vertical-align: middle;
+  }
+}
+
+.header-img{
+  width: 100%;
+  height: pxToRem(420);
+  text-align: center;
+  overflow: hidden;
+  img{
+    width: 100%;
     vertical-align: middle;
   }
 }
@@ -129,10 +145,10 @@ a{
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: $secondaryBackgroundColor;
+  background-color: $mainColor;
   line-height: dpToRem(48);
   font-size: 14px;
-  color: $fontColor;
+  color: $secondaryFontColor;
   background-image: url("../images/gap.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -153,7 +169,7 @@ a{
     transform: scaleY(0.5);
   }
   a{
-    color: $fontColor;
+    color: $secondaryFontColor;
   }
   >div{
     flex: 1;
