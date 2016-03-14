@@ -6,6 +6,8 @@ equity.html 股权
 discarded.html 弃单
 project.html 产品名称
 
+list.html 新增的列表页
+
 
 #注意:
 
