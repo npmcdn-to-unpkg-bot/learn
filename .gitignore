@@ -6,3 +6,5 @@ weui/.idea
 weui/node_modules
 gulp/.idea
 gulp/node_modules
+angular2-quickstart/node_modules
+angular2-quickstart/.idea
