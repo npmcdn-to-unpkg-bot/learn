@@ -8,3 +8,5 @@ gulp/.idea
 gulp/node_modules
 angular2-quickstart/node_modules
 angular2-quickstart/.idea
+typescript/node_modules
+typescript/.idea
