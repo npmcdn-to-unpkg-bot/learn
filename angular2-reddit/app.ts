@@ -4,14 +4,15 @@ import { Component } from 'angular2/core';
 @Component({
     selector: 'hello-world',
     template: `
-    <div>
-        你好
-    </div>
+    <ul>
+        <li  *ngFor="#name of names">{{ name }}</li>
+    </ul>
     `
 })
-
 class HelloWorld {
-
+    names: Array<string>;
+    constructor() {
+        this.names = ['王二', '妮儿', '尼古拉斯赵四'];
+    }
 }
-
 bootstrap(HelloWorld);

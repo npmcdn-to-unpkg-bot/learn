@@ -12,7 +12,7 @@
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="resources/vendor/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
@@ -27,11 +27,11 @@
           }
         }
       });
-      System.import('app.js')
+      System.import('app/reddit.js')
             .then(null, console.error.bind(console));
     </script>
 
 
-    <hello-world></hello-world>
+    <reddit></reddit>
   </body>
 </html>
