@@ -27,7 +27,7 @@ System.register(['angular2/platform/browser', 'angular2/core', 'angular2/common'
             MyForm = (function () {
                 function MyForm(fb) {
                     this.myForm = fb.group({
-                        sku: ['ABC123']
+                        sku: ['', common_1.Validators.required]
                     });
                 }
                 MyForm.prototype.onSubmit = function (value) {

@@ -1,6 +1,6 @@
 import { bootstrap } from 'angular2/platform/browser';
 import { Component } from 'angular2/core';
-import {FORM_DIRECTIVES, FormBuilder, ControlGroup} from 'angular2/common';
+import {FORM_DIRECTIVES, FormBuilder, ControlGroup, Validator, Validators} from 'angular2/common';
 
 @Component({
     selector: 'my-form',
@@ -29,7 +29,7 @@ export class MyForm {
 
     constructor(fb: FormBuilder){
         this.myForm = fb.group({
-            sku: ['ABC123']
+            sku: ['', Validators.required]
         });
     }
 

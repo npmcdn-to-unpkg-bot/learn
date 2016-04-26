@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="router.js"></script>
+</head>
+<body>
+<a href="/about">about</a>
+<a href="/products/a/edit/114">products</a>
+
+<script type="text/javascript">
+    Router.config({
+        mode: 'history',
+        root: '/router/index.html'
+    });
+
+    Router
+        .add(/about/, function() {
+            console.log('about');
+        })
+        .add(/products\/(.*)\/edit\/(.*)/, function() {
+            console.log('products', arguments);
+        })
+        .add(function() {
+            console.log('default');
+        })
+        .listen();
+
+    document.body.addEventListener('click', function (e) {
+        var target = e.target;
+
+        if (target.tagName.toUpperCase() === 'A') {
+            e.preventDefault();
+            Router.navigate(target.getAttribute('href'));
+        }
+
+    }, false);
+</script>
+</body>
+</html>
