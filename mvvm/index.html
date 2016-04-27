@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="mvvm.js"></script>
+</head>
+<body>
+    <div id="main">
+        <input type="text" v-model='greeting'>
+        <div v-disp='greeting'></div>
+        <br/>
+        <select name="" id="" v-model='sel'>
+            <option value="China">中国</option>
+            <option value="Japan">日本</option>
+            <option value="U.S.A">美国</option>
+        </select>
+        <div v-disp='sel'></div>
+    </div>
+    <script>
+        new Mvvm({
+            el: "#main",
+            data: {
+                greeting: "hello world ~",
+                sel: "U.S.A"
+            }
+        })
+    </script>
+</body>
+</html>
