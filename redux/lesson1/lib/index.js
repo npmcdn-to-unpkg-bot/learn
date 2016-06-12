@@ -1,7 +1,12 @@
-import { createStore } from 'redux';
+'use strict';
+
+var _redux = require('redux');
 
 // reducer
-function counter(state = 0, action) {
+function counter() {
+    var state = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+    var action = arguments[1];
+
     switch (action.type) {
         case 'INCREMENT':
             return state + 1;
@@ -13,4 +18,10 @@ function counter(state = 0, action) {
 }
 
 // store
-const store = createStore(counter);
+var store = (0, _redux.createStore)(counter);
+
+store.subscribe(function () {
+    console.log(store.getState());
+});
+
+store.dispatch({ type: 'INCREMENT' });
